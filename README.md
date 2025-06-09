@@ -50,7 +50,7 @@ brew install genin@0.3.8
 brew install tarantool-picodata@2.10
 
 # picodata
-brew install picodata@25.1
+brew install picodata@25.2
 ```
 
 ## Authors
