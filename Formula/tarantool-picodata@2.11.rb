@@ -13,7 +13,7 @@ class TarantoolPicodataAT211 < Formula
   end
 
   bottle do
-    root_url "https://binary.picodata.io/repository/raw/brew/bottle"
+    root_url "https://download.picodata.io/tarantool-picodata/macos"
     sha256 cellar: "/opt/homebrew/Cellar",  arm64_ventura:    "ba8e27bb35b0dc2e03048bdef15efc33ca7b3ce4a48dbb4aa2aac0d51f8f91ae"
     sha256 cellar: "/opt/homebrew/Cellar",  arm64_monterey:   "ba8e27bb35b0dc2e03048bdef15efc33ca7b3ce4a48dbb4aa2aac0d51f8f91ae"
     sha256 cellar: "/opt/homebrew/Cellar",  arm64_big_sur:    "ba8e27bb35b0dc2e03048bdef15efc33ca7b3ce4a48dbb4aa2aac0d51f8f91ae"
