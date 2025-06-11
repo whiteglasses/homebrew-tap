@@ -1,11 +1,11 @@
 class TarantoolPicodataAT211 < Formula
   desc "Picodata fork tarantool in-memory database and Lua application server"
   homepage "https://picodata.io/"
-  url "https://binary.picodata.io/repository/raw/brew/packages/tarantool-picodata-2.11.2.98.tar.gz"
-  sha256 "c0741558b066bf4b315424d6171459d657fdc25aca1063e421ff5a7d4c8bd4b0"
+  url "https://download.picodata.io/tarantool-picodata/sources/tarantool-picodata-2.11.5.233.tar.xz"
+  sha256 "fc99a406e52c4640ccc4f3d33afb195f577ead1e708d5a25efe8d919101a7348"
   license "BSD-2-Clause"
   version_scheme 1
-  head "https://git.picodata.io/picodata/tarantool.git", branch: "2.11.2-picodata"
+  head "https://git.picodata.io/picodata/tarantool.git", branch: "2.11.5-picodata"
 
   livecheck do
     url :head
@@ -13,10 +13,10 @@ class TarantoolPicodataAT211 < Formula
   end
 
   bottle do
-    root_url "https://binary.picodata.io/repository/raw/brew/bottle"
-    sha256 cellar: "/opt/homebrew/Cellar",  arm64_ventura:    "540182af5999597ef0427210b9892a5c96b812d55a71b63110ce0641baf89398"
-    sha256 cellar: "/opt/homebrew/Cellar",  arm64_monterey:   "540182af5999597ef0427210b9892a5c96b812d55a71b63110ce0641baf89398"
-    sha256 cellar: "/opt/homebrew/Cellar",  arm64_big_sur:    "540182af5999597ef0427210b9892a5c96b812d55a71b63110ce0641baf89398"
+    root_url "https://download.picodata.io/tarantool-picodata/macos"
+    sha256 cellar: "/opt/homebrew/Cellar",  arm64_ventura:    "ba8e27bb35b0dc2e03048bdef15efc33ca7b3ce4a48dbb4aa2aac0d51f8f91ae"
+    sha256 cellar: "/opt/homebrew/Cellar",  arm64_monterey:   "ba8e27bb35b0dc2e03048bdef15efc33ca7b3ce4a48dbb4aa2aac0d51f8f91ae"
+    sha256 cellar: "/opt/homebrew/Cellar",  arm64_big_sur:    "ba8e27bb35b0dc2e03048bdef15efc33ca7b3ce4a48dbb4aa2aac0d51f8f91ae"
   end
 
   depends_on "cmake" => :build
